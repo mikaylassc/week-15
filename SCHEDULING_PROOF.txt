@@ -1,0 +1,3 @@
+Used cron scheduling.
+Time: Daily at 9:00 PM.
+Command: 0 21 * * * /usr/bin/python3 /Users/mikaylasettles/Documents/GitHub/week-15/daily_backup.py

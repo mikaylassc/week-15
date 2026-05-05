@@ -11,6 +11,7 @@ import time
 import os
 from datetime import datetime
 import smtplib
+from email.message import EmailMessage
 
 URL = "https://thiswebsitedoesnotexist123456.com"
 LOG_FILE = "uptime_log.txt"
@@ -23,6 +24,7 @@ def send_email(url, status_code, error=None):
     print("Subject: Website Down Alert")
     print(f"URL: {url}")
     print(f"Time: {datetime.now()}")
+    print(f"Status Code / Error: {status_code or error}\n")
 
 
 def log(status, code_or_error):
